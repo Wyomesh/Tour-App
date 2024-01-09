@@ -1,0 +1,358 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Noto Sans", sans-serif;
+    letter-spacing: 2px;
+  }
+  .App {
+    font-family: "Noto Sans", sans-serif;
+    text-align: center;
+  }
+  .navbar {
+    margin: 0.8rem 1.8rem;
+  }
+  .navbarContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .navbarHeading {
+    font-size: 13px;
+    align-self: center;
+  }
+  .navbarHeading h1 {
+    letter-spacing: 2.5px;
+  }
+  .navbarHeading span {
+    color: #3fd0d4;
+  }
+  .navbarLinksContainer,
+  .navSocialMedia {
+    display: none;
+  }
+  
+  .hamburger {
+    justify-self: flex-end;
+    align-self: center;
+    color: #3fd0d4;
+    cursor: pointer;
+  }
+  .hero {
+    display: grid;
+    text-align: center;
+    height: 100vh;
+    background: #3fd0d4;
+    background-repeat: no-repeat;
+  }
+  .heroContainer {
+    display: grid;
+    grid-template-rows: 4fr 1fr 5fr;
+    justify-content: center;
+    align-items: center;
+  }
+  .heroHeading {
+    letter-spacing: 2px;
+    padding-bottom: 1rem;
+    font-size: 1.8rem;
+    justify-self: center;
+    align-self: flex-end;
+    color: #fff;
+  }
+  .textContent {
+    letter-spacing: 2px;
+    max-width: 400px;
+    justify-self: center;
+    align-self: flex-start;
+    padding-bottom: 2rem;
+    color: #fff;
+  }
+  .heroButton {
+    letter-spacing: 2px;
+    padding: 0.6rem;
+    border: 2px solid #fff;
+    justify-self: center;
+    align-self: flex-start;
+    cursor: pointer;
+    color: #fff;
+  }
+  .heroButton:hover {
+    background: #fff;
+    color: #3fd0d4;
+  }
+  .services {
+    margin-top: 0;
+    padding-top: 3rem;
+    background: #f7f7f7;
+    padding-bottom: 5rem;
+  }
+  .servicesContainer {
+    display: grid;
+    grid-template-rows: 1fr 2fr;
+  }
+  .servicesHeading {
+    justify-self: center;
+    align-self: center;
+    font-size: 1.4rem;
+  }
+  .servicesHeading span {
+    color: #3fd0d4;
+  }
+  .servicesCardsContainer {
+    align-self: center;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+  .servicesCards {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    padding: 0 0 3rem 0;
+  }
+  .icons {
+    font-size: 1.6rem;
+    justify-self: flex-end;
+    background: #3fd0d4;
+    align-self: flex-start;
+    padding: 0.4rem;
+  }
+  .iconsDescription {
+    padding: 0 0.6rem;
+  }
+  .featuredTours {
+    display: grid;
+    height: 1700px;
+    justify-self: center;
+  }
+  .featuredToursHeading {
+    padding-top: 3.5rem;
+    text-align: center;
+    font-size: 1.4rem;
+  }
+  .featuredToursHeading span,
+  .galleryHeading span {
+    color: #3fd0d4;
+  }
+  .featuresToursImages,
+  .galleryImages {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+  }
+  .featuredCards,
+  .galleryCards {
+    max-width: 100%;
+    display: grid;
+    justify-self: center;
+  }
+  .featuredCards img {
+    max-width: 340px;
+    padding: 1.5rem 0.5rem;
+    padding-bottom: 0%;
+  }
+  .featuredToursContainer,
+  .galleryContainer {
+    justify-self: center;
+  }
+  .galleryHeading {
+    padding: 2rem;
+    font-size: 1.4rem;
+    text-align: center;
+  }
+  .galleryCards img {
+    width: 378px;
+    padding: 0;
+  }
+  .gallery {
+    background: #afafaf;
+  }
+  .featuredCards {
+    padding-top: 1.7rem;
+    position: relative;
+  }
+  .dateTime {
+    position: absolute;
+    top: 2.7rem;
+    margin: 0.5rem;
+    padding: 0.3rem;
+    background: #3fd0d4;
+  }
+  .featuredCardsContainerDetails {
+    margin: 0 0.5rem;
+    text-align: center;
+    border-bottom: 4px solid #afafaf;
+    border-right: 2px solid #afafaf;
+  }
+  .name {
+    padding-top: 2rem;
+  }
+  .placeTimePrice {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 1.5rem 0.3rem;
+  }
+  .place {
+    color: #3fd0d4;
+    grid-row-end: 2;
+    align-self: center;
+  }
+  .timePrice {
+    color: #afafaf;
+    justify-self: flex-end;
+  }
+  
+  .footer {
+    display: grid;
+    background: black;
+    color: #fff;
+  }
+  .footerContainer {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+  .footerNavbar {
+    padding: 1rem;
+  }
+  .navbars {
+    display: grid;
+    grid-template-columns: 1fr 1.1fr 1.4fr 1.4fr 1.2fr;
+  }
+  .navbars li {
+    padding: 0.3rem;
+    list-style: none;
+    justify-self: center;
+    cursor: pointer;
+  }
+  .socialMedia {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-self: center;
+    align-self: center;
+  }
+  .socialMediaLinks {
+    padding: 0.5rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+  .socialMediaLinks:hover {
+    color: #3fd0d4;
+  }
+  .copyright {
+    justify-self: center;
+    color: #f7f7f7;
+  }
+  .copyright p {
+    text-align: center;
+    padding: 0 1rem;
+    max-width: 400px;
+    color: #afafaf;
+    padding-top: 1rem;
+  }
+  .btn:hover {
+    color: #3fd0d4;
+  }
+  @media screen and (min-width: 876px) {
+    * {
+      letter-spacing: 3px;
+    }
+    .navbarHeading {
+      justify-self: center;
+    }
+    .navbarContainer {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+    .navbarLinksContainer {
+      display: grid;
+    }
+    .navbarLinks {
+      display: grid;
+      grid-template-columns: 1fr 1.1fr 1.4fr 1.4fr 1.2fr;
+      padding: 0 3rem;
+    }
+    .navbarLinks li {
+      align-self: center;
+      list-style: none;
+      font-weight: bold;
+      color: #222;
+      cursor: pointer;
+      font-size: 14px;
+      font-weight: normal;
+    }
+    .hamburger {
+      display: none;
+    }
+    .navSocialMedia {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      justify-self: center;
+      align-self: center;
+      color: #3fd0d4;
+    }
+    .navSocialMedia .socialMediaLinks {
+      font-size: 15px;
+      padding: 0 0.25rem;
+    }
+    .hero {
+      background-image: linear-gradient(
+          180deg,
+          #3fcfd4a4,
+          rgba(34, 34, 34, 0.656)
+        ),
+        url("../public/main.jpeg");
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    .heroHeading {
+      font-size: 2rem;
+    }
+    .servicesCardsContainer {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      justify-self: center;
+      align-self: center;
+    }
+    .services {
+      height: 400px;
+    }
+    .servicesContainer,
+    .featuredToursContainer {
+      margin-left: 10rem;
+      margin-right: 10rem;
+    }
+    .iconDescriptionPara {
+      font-size: 14px;
+    }
+    .iconsDescription {
+      max-width: 400px;
+    }
+    .featuresToursImages {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+    .featuredTours {
+      height: 1000px;
+    }
+    .featuresToursImages,
+    .galleryImages {
+      display: grid;
+      grid-template-rows: 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+    .galleryImages {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-template-rows: 1fr;
+    }
+    .gallery {
+      height: 528px;
+    }
+    .footerNavbar {
+      padding: 0 5rem;
+      padding-top: 2rem;
+    }
+    .navbars {
+      padding: 0 30rem;
+    }
+    .copyright p {
+      max-width: 100vw;
+    }
+  }
+  
